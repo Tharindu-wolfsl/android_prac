@@ -11,16 +11,17 @@ import android.widget.LinearLayout;
 public class MainActivity extends AppCompatActivity {
 
     Button analyzeBtn;
-
+    double ph=6.0;
+    double temp=40.5;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        LinearLayout l=findViewById(R.id.linear_layer);
-        LayoutInflater li=getLayoutInflater();
+
+
 //        View v=li.inflate(R.layout.sub_class,null);
 
-        View v=li.inflate(R.layout.sub_class,l,false);
+
 
         onClickBtn();
 //        l.addView(v);
@@ -35,10 +36,20 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 LinearLayout l2=findViewById(R.id.linear2);
                 LayoutInflater li1=getLayoutInflater();
-                View v1=li1.inflate(R.layout.sub_btn,l2,true);
+
+                LayoutInflater li=getLayoutInflater();
+                LinearLayout l=findViewById(R.id.linear_layer);
 
                 analyzeBtn.setEnabled(false);
                 analyzeBtn.setVisibility(View.GONE);
+
+                if(ph>7.0 && temp>30){
+                    View v1=li1.inflate(R.layout.sub_btn,l2,true);
+
+                }
+                else{
+                    View v=li.inflate(R.layout.sub_class,l,true);
+                }
             }
         });
 
