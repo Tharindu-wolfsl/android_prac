@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#33FF88">
+
+    <TextView
+        android:id="@+id/tharindu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tharindu"
+        android:textSize="36sp"
+        android:layout_gravity="center"/>
+
+    <LinearLayout
+        android:id="@+id/linear_layer"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#0000FF" />
+    <LinearLayout
+        android:id="@+id/linear2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#FF8800"
+        android:layout_marginTop="150dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        />
+
+
+
+    <Button
+        android:id="@+id/analyze"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="ANALYZE"
+        android:padding="10dp"
+        android:layout_marginTop="400dp"
+        android:layout_gravity="center_horizontal"
+        />
+
+</FrameLayout>
